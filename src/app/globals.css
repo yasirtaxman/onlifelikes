@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/*
+ * On Life Likes — "Fresh and Clean, Sage + Forest" palette
+ *   Off White        #F6F8F6  → backgrounds
+ *   Warm Beige/Gray  #DAD7CD  → borders, cards, dividers, neutral areas
+ *   Soft Sage        #A3B18A  → highlights, badges, hovers, secondary accents
+ *   Forest Green     #588157  → buttons, links, active states, CTAs
+ *   Deep Forest      #344E41  → text, headings, footer, strong brand elements
+ */
+@theme {
+  --color-cream: #f6f8f6;
+  --color-beige: #dad7cd;
+  --color-beige-light: #eceae3;
+  --color-sage: #a3b18a;
+  --color-sage-light: #e4e9db;
+  --color-forest: #588157;
+  --color-forest-dark: #476a46;
+  --color-pine: #344e41;
+  --color-pine-dark: #27392f;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: var(--font-lora), ui-serif, Georgia, Cambria, "Times New Roman",
+    serif;
+
+  --shadow-card: 0 1px 3px rgb(52 78 65 / 0.06), 0 4px 14px rgb(52 78 65 / 0.05);
+  --shadow-card-hover: 0 2px 6px rgb(52 78 65 / 0.08),
+    0 10px 28px rgb(52 78 65 / 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-pine antialiased;
+}
+
+::selection {
+  background: var(--color-sage);
+  color: var(--color-pine-dark);
+}
+
+/* Comfortable long-form reading defaults inside article bodies */
+.prose-onl {
+  @apply text-[1.0625rem] leading-[1.8] text-pine;
+}
+.prose-onl a {
+  @apply font-medium text-forest underline decoration-sage decoration-2 underline-offset-2 transition-colors hover:text-forest-dark hover:decoration-forest;
+}
+
+/* Reduce motion for users who ask for it */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

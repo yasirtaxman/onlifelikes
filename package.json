@@ -1,0 +1,30 @@
+{
+  "name": "onlifelikes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "On Life Likes — Practical picks for better everyday living. Lifestyle & product-help website.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sanity/image-url": "^2.1.1",
+    "@sanity/vision": "^6.3.0",
+    "next": "^16.2.10",
+    "next-sanity": "^13.1.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "sanity": "^6.3.0",
+    "styled-components": "^6.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.2",
+    "@types/node": "^26.1.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^5.9.3"
+  }
+}
