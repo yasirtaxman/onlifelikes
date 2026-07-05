@@ -74,9 +74,45 @@ export const product = defineType({
       name: "amazonUrl",
       title: "Amazon URL (fallback if no ASIN — search links are fine)",
       type: "url",
+      validation: (r) =>
+        r
+          .custom((value, context) => {
+            const doc = (context.document ?? {}) as { amazonAsin?: string };
+            if (value || doc.amazonAsin) return true;
+            return "No Amazon link yet — the “Check price on Amazon” button will go nowhere. Add the ASIN above (best) or paste an Amazon URL here.";
+          })
+          .warning(),
     }),
-    defineField({ name: "pros", type: "array", of: [{ type: "string" }] }),
-    defineField({ name: "cons", type: "array", of: [{ type: "string" }] }),
+    defineField({
+      name: "pros",
+      title: "Pros",
+      type: "array",
+      of: [{ type: "string" }],
+      // Product card without pros
+      validation: (r) =>
+        r
+          .custom((value) =>
+            Array.isArray(value) && value.length > 0
+              ? true
+              : "The pros list is empty. Add 2–3 short pros (a few words each) — product cards look bare and less trustworthy without them.",
+          )
+          .warning(),
+    }),
+    defineField({
+      name: "cons",
+      title: "Cons",
+      type: "array",
+      of: [{ type: "string" }],
+      // Product card without cons
+      validation: (r) =>
+        r
+          .custom((value) =>
+            Array.isArray(value) && value.length > 0
+              ? true
+              : "The cons list is empty. Every honest recommendation has at least one downside — adding 1–2 cons makes the card more credible, not less.",
+          )
+          .warning(),
+    }),
   ],
   preview: {
     select: { title: "name", subtitle: "brand", media: "image" },

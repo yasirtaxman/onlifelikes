@@ -107,6 +107,8 @@ Publish a new article every day without touching code:
 
 To edit later: open the article, change anything, update **Last updated date**, publish again.
 
+**Built-in editorial coaching:** the Studio shows friendly yellow warnings (they never block publishing) whenever something worth fixing is detected — missing SEO title, meta description, or focus keyword; missing image alt text; product/Amazon links with the affiliate disclosure switched off; fewer than 3 FAQs; fewer than 2 internal links; a product guide without a "How we chose" section; a product with empty pros/cons or no Amazon link; and published articles that haven't been updated in 6+ months. If an article shows no yellow notes, it's in good shape.
+
 ## 5. Deploying on Vercel
 
 1. Push this repository to GitHub.
