@@ -23,7 +23,7 @@ export const post: Post = {
   publishedAt: "2026-06-18",
   updatedAt: "2026-07-01",
   image: "/images/categories/comparisons.svg",
-  imageAlt: "Robot vacuum and cordless stick vacuum compared, sage illustration",
+  imageAlt: "Robot vacuum and cordless stick vacuum compared, brand-color illustration",
   hasAffiliateLinks: true,
   showAds: true,
   faqSchema: true,

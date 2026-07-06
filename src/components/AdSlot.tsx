@@ -56,8 +56,8 @@ export function AdSlot({
           data-full-width-responsive="true"
         />
       ) : (
-        <div className="flex h-[250px] items-center justify-center rounded-xl border border-dashed border-beige bg-beige-light/50">
-          <span className="text-xs uppercase tracking-widest text-pine/35">
+        <div className="flex h-[250px] items-center justify-center rounded-xl border border-dashed border-line bg-mist/50">
+          <span className="text-xs uppercase tracking-widest text-ink/35">
             Advertisement
           </span>
         </div>

@@ -23,7 +23,7 @@ export const post: Post = {
   publishedAt: "2026-06-10",
   updatedAt: "2026-07-02",
   image: "/images/categories/cleaning.svg",
-  imageAlt: "Cordless stick vacuum illustration in sage and forest green tones",
+  imageAlt: "Cordless stick vacuum illustration in On Life Likes brand colors",
   hasAffiliateLinks: true,
   showAds: true,
   faqSchema: true,

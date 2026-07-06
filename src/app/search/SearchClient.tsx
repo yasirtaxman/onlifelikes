@@ -38,9 +38,9 @@ export function SearchClient({ posts }: { posts: PostCard[] }) {
         onChange={(e) => setQ(e.target.value)}
         placeholder="Try “robot vacuum”, “small kitchen”, “desk lamp”…"
         autoFocus
-        className="w-full max-w-xl rounded-full border border-beige bg-white px-6 py-3.5 text-pine placeholder:text-pine/40 focus:border-sage focus:outline-2 focus:outline-sage/50"
+        className="w-full max-w-xl rounded-full border border-line bg-white px-6 py-3.5 text-ink placeholder:text-ink/40 focus:border-second focus:outline-2 focus:outline-second/50"
       />
-      <p className="mt-4 text-sm text-pine/60" role="status">
+      <p className="mt-4 text-sm text-ink/60" role="status">
         {q.trim()
           ? `${results.length} result${results.length === 1 ? "" : "s"} for “${q.trim()}”`
           : `Browsing all ${posts.length} articles`}
@@ -51,7 +51,7 @@ export function SearchClient({ posts }: { posts: PostCard[] }) {
         ))}
       </div>
       {q.trim() && results.length === 0 && (
-        <p className="mt-8 rounded-2xl border border-beige bg-white p-8 text-pine/70">
+        <p className="mt-8 rounded-2xl border border-line bg-white p-8 text-ink/70">
           No matches. Try a shorter keyword — for example “vacuum” instead of
           “vacuum cleaner for wooden floors”.
         </p>

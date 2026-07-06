@@ -25,7 +25,7 @@ export default async function SearchPage() {
           { name: "Search", path: "/search" },
         ]}
       />
-      <h1 className="mt-6 text-3xl font-extrabold tracking-tight text-pine">
+      <h1 className="mt-6 text-3xl font-extrabold tracking-tight text-ink">
         Search
       </h1>
       <Suspense>

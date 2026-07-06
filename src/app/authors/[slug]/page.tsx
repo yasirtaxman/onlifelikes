@@ -55,21 +55,21 @@ export default async function AuthorPage({
       />
       <Breadcrumbs items={crumbs} />
       <header className="mt-6 flex flex-col items-start gap-6 sm:flex-row sm:items-center">
-        <span className="relative block h-24 w-24 shrink-0 overflow-hidden rounded-full bg-sage-light">
+        <span className="relative block h-24 w-24 shrink-0 overflow-hidden rounded-full bg-second-tint">
           {author.image && (
             <Image src={author.image} alt={author.name} fill sizes="96px" className="object-cover" />
           )}
         </span>
         <div>
-          <h1 className="text-3xl font-extrabold tracking-tight text-pine">
+          <h1 className="text-3xl font-extrabold tracking-tight text-ink">
             {author.name}
           </h1>
-          <p className="mt-1 font-medium text-forest">{author.role}</p>
-          <p className="mt-3 max-w-2xl leading-relaxed text-pine/80">{author.bio}</p>
+          <p className="mt-1 font-medium text-brand">{author.role}</p>
+          <p className="mt-3 max-w-2xl leading-relaxed text-ink/80">{author.bio}</p>
         </div>
       </header>
       <section className="mt-12" aria-label={`Articles by ${author.name}`}>
-        <h2 className="text-2xl font-bold text-pine">
+        <h2 className="text-2xl font-bold text-ink">
           Articles by {author.name}
         </h2>
         <div className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -78,7 +78,7 @@ export default async function AuthorPage({
           ))}
         </div>
         {posts.length === 0 && (
-          <p className="mt-4 text-pine/60">No published articles yet.</p>
+          <p className="mt-4 text-ink/60">No published articles yet.</p>
         )}
       </section>
     </div>

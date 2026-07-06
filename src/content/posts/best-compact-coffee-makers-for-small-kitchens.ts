@@ -23,7 +23,7 @@ export const post: Post = {
   publishedAt: "2026-06-20",
   updatedAt: "2026-07-02",
   image: "/images/categories/kitchen.svg",
-  imageAlt: "Compact coffee maker illustration in sage and forest green tones",
+  imageAlt: "Compact coffee maker illustration in On Life Likes brand colors",
   hasAffiliateLinks: true,
   showAds: true,
   faqSchema: true,

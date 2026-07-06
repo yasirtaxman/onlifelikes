@@ -33,7 +33,7 @@ export default function AffiliateDisclosurePage() {
         advertising and linking to Amazon.{" "}
         <strong>{site.amazonAssociateLine}</strong>
       </p>
-      <h2>Where you'll see disclosures</h2>
+      <h2>Where you&apos;ll see disclosures</h2>
       <ul>
         <li>
           At the top of every article that contains affiliate links, before any

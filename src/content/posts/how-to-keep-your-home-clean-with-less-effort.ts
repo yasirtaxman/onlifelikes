@@ -23,7 +23,7 @@ export const post: Post = {
   publishedAt: "2026-06-06",
   updatedAt: "2026-06-27",
   image: "/images/categories/cleaning.svg",
-  imageAlt: "Calm tidy home illustration in sage and forest green tones",
+  imageAlt: "Calm tidy home illustration in On Life Likes brand colors",
   hasAffiliateLinks: false,
   showAds: true,
   faqSchema: true,

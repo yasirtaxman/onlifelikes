@@ -38,6 +38,7 @@ import { TagList } from "@/components/TagList";
 import { TypeBadge } from "@/components/TypeBadge";
 import { EditorNote, UpdateNotice } from "@/components/boxes";
 import { AdSlot } from "@/components/AdSlot";
+import { SectionHeader } from "@/components/SectionHeader";
 
 export const revalidate = 300;
 
@@ -125,11 +126,14 @@ async function CategoryPage({ category }: { category: Category }) {
       <Breadcrumbs items={crumbs} />
 
       {/* Category intro */}
-      <header className="mt-6 max-w-3xl">
-        <h1 className="text-3xl font-extrabold tracking-tight text-pine sm:text-4xl">
+      <header className="mt-6 max-w-3xl border-b-2 border-line pb-6">
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-second">
+          Category · {cards.length} article{cards.length === 1 ? "" : "s"}
+        </p>
+        <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
           {category.title}
         </h1>
-        <p className="mt-3 text-lg leading-relaxed text-pine/70">
+        <p className="mt-3 text-lg leading-relaxed text-ink/70">
           {category.description}
         </p>
       </header>
@@ -145,10 +149,8 @@ async function CategoryPage({ category }: { category: Category }) {
       {/* Latest posts */}
       {cards.length > 1 && (
         <section className="mt-12" aria-label="Latest posts">
-          <h2 className="text-2xl font-bold text-pine">
-            Latest in {category.title}
-          </h2>
-          <div className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <SectionHeader eyebrow="Fresh" title={`Latest in ${category.title}`} />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {cards.slice(1, 7).map((p) => (
               <ArticleCard key={p.slug} post={p} />
             ))}
@@ -157,9 +159,9 @@ async function CategoryPage({ category }: { category: Category }) {
       )}
 
       {cards.length === 0 && (
-        <p className="mt-10 rounded-2xl border border-beige bg-white p-8 text-pine/70">
+        <p className="mt-10 rounded-2xl border border-line bg-white p-8 text-ink/70">
           Fresh guides for this category are in the works — check back soon, or
-          explore our <Link href="/categories" className="font-medium text-forest underline">other categories</Link>.
+          explore our <Link href="/categories" className="font-medium text-brand underline">other categories</Link>.
         </p>
       )}
 
@@ -168,8 +170,8 @@ async function CategoryPage({ category }: { category: Category }) {
       {/* Popular buying guides */}
       {guides.length > 0 && (
         <section className="mt-4" aria-label="Popular buying guides">
-          <h2 className="text-2xl font-bold text-pine">Popular buying guides</h2>
-          <div className="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <SectionHeader eyebrow="Research-based" title="Popular buying guides" />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {guides.slice(0, 3).map((p) => (
               <ArticleCard key={p.slug} post={p} />
             ))}
@@ -180,8 +182,8 @@ async function CategoryPage({ category }: { category: Category }) {
       {/* Related categories */}
       {related.length > 0 && (
         <section className="mt-12" aria-label="Related categories">
-          <h2 className="text-2xl font-bold text-pine">Related categories</h2>
-          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <SectionHeader eyebrow="Keep exploring" title="Related categories" />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {related.map((c) => (
               <CategoryCard key={c.slug} category={c} />
             ))}
@@ -191,11 +193,11 @@ async function CategoryPage({ category }: { category: Category }) {
 
       {/* SEO text section */}
       {category.seoText && (
-        <section className="mt-12 rounded-2xl border border-beige bg-beige-light/60 p-6 sm:p-8" aria-label={`About ${category.title}`}>
-          <h2 className="text-xl font-bold text-pine">
+        <section className="mt-12 rounded-2xl border border-line bg-mist/60 p-6 sm:p-8" aria-label={`About ${category.title}`}>
+          <h2 className="text-xl font-bold text-ink">
             About our {category.title} coverage
           </h2>
-          <p className="mt-3 leading-relaxed text-pine/80">{category.seoText}</p>
+          <p className="mt-3 leading-relaxed text-ink/80">{category.seoText}</p>
         </section>
       )}
 
@@ -253,30 +255,30 @@ async function ArticlePage({ post }: { post: Post }) {
           {category && (
             <Link
               href={`/${category.slug}`}
-              className="font-semibold uppercase tracking-wide text-forest hover:underline"
+              className="font-semibold uppercase tracking-wide text-brand hover:underline"
             >
               {category.title}
             </Link>
           )}
           <TypeBadge type={post.type} />
-          <span className="rounded-full border border-beige px-2.5 py-0.5 text-[11px] font-medium text-pine/60">
+          <span className="rounded-full border border-line px-2.5 py-0.5 text-[11px] font-medium text-ink/60">
             {reviewMethodLabel[post.reviewMethod]}
           </span>
         </div>
 
-        <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight text-pine sm:text-4xl">
+        <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
           {post.title}
         </h1>
 
-        <p className="mt-4 text-lg leading-relaxed text-pine/70">{post.excerpt}</p>
+        <p className="mt-4 text-lg leading-relaxed text-ink/70">{post.excerpt}</p>
 
-        <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-pine/60">
+        <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-ink/60">
           {author && (
             <span>
               By{" "}
               <Link
                 href={`/authors/${author.slug}`}
-                className="font-semibold text-pine hover:text-forest hover:underline"
+                className="font-semibold text-ink hover:text-brand hover:underline"
               >
                 {author.name}
               </Link>
@@ -296,7 +298,7 @@ async function ArticlePage({ post }: { post: Post }) {
       <TableOfContents body={post.body} />
 
       <figure className="my-8">
-        <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-sage-light">
+        <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-second-tint">
           <Image
             src={post.image}
             alt={post.imageAlt}

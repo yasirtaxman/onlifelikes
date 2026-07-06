@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
-<rect width="1200" height="675" fill="#F6F8F6"/>
-<rect width="1200" height="675" fill="#DAD7CD" opacity="0.35"/>
-<rect x="220" y="220" width="340" height="240" rx="36" fill="#344E41" opacity="0.8"/><circle cx="390" cy="340" r="60" fill="#A3B18A"/><circle cx="390" cy="340" r="26" fill="#F6F8F6"/><path d="M700 420 q120 -180 300 -110" stroke="#588157" stroke-width="26" fill="none" stroke-linecap="round" opacity="0.7"/><circle cx="720" cy="430" r="34" fill="#588157"/><circle cx="1010" cy="300" r="34" fill="#A3B18A"/>
+<rect width="1200" height="675" fill="#FFFFFF"/>
+<rect width="1200" height="675" fill="#D1D5DB" opacity="0.35"/>
+<rect x="220" y="220" width="340" height="240" rx="36" fill="#0C5E69" opacity="0.8"/><circle cx="390" cy="340" r="60" fill="#32A9C3"/><circle cx="390" cy="340" r="26" fill="#FFFFFF"/><path d="M700 420 q120 -180 300 -110" stroke="#0C5E69" stroke-width="26" fill="none" stroke-linecap="round" opacity="0.7"/><circle cx="720" cy="430" r="34" fill="#0C5E69"/><circle cx="1010" cy="300" r="34" fill="#32A9C3"/>
 </svg>

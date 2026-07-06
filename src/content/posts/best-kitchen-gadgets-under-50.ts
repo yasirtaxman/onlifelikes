@@ -23,7 +23,7 @@ export const post: Post = {
   publishedAt: "2026-06-08",
   updatedAt: "2026-07-01",
   image: "/images/categories/kitchen.svg",
-  imageAlt: "Kitchen gadgets illustration in sage and forest green tones",
+  imageAlt: "Kitchen gadgets illustration in On Life Likes brand colors",
   hasAffiliateLinks: true,
   showAds: true,
   faqSchema: true,

@@ -7,7 +7,7 @@ export interface Crumb {
 
 export function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
-    <nav aria-label="Breadcrumb" className="text-sm text-pine/60">
+    <nav aria-label="Breadcrumb" className="text-sm text-ink/60">
       <ol className="flex flex-wrap items-center gap-1.5">
         {items.map((item, i) => {
           const last = i === items.length - 1;
@@ -15,11 +15,11 @@ export function Breadcrumbs({ items }: { items: Crumb[] }) {
             <li key={item.path} className="flex items-center gap-1.5">
               {i > 0 && <span aria-hidden="true">›</span>}
               {last ? (
-                <span aria-current="page" className="line-clamp-1 text-pine/80">
+                <span aria-current="page" className="line-clamp-1 text-ink/80">
                   {item.name}
                 </span>
               ) : (
-                <Link href={item.path} className="hover:text-forest hover:underline">
+                <Link href={item.path} className="hover:text-brand hover:underline">
                   {item.name}
                 </Link>
               )}

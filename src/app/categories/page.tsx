@@ -21,10 +21,10 @@ export default function CategoriesPage() {
           { name: "Categories", path: "/categories" },
         ]}
       />
-      <h1 className="mt-6 text-3xl font-extrabold tracking-tight text-pine sm:text-4xl">
+      <h1 className="mt-6 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
         All categories
       </h1>
-      <p className="mt-3 max-w-2xl text-lg text-pine/70">
+      <p className="mt-3 max-w-2xl text-lg text-ink/70">
         Everything we cover, in one place — from everyday home ideas to
         research-based buying guides.
       </p>

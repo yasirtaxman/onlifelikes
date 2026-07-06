@@ -22,10 +22,10 @@ export default function AuthorsPage() {
           { name: "Authors", path: "/authors" },
         ]}
       />
-      <h1 className="mt-6 text-3xl font-extrabold tracking-tight text-pine sm:text-4xl">
+      <h1 className="mt-6 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
         Our authors
       </h1>
-      <p className="mt-3 max-w-2xl text-lg text-pine/70">
+      <p className="mt-3 max-w-2xl text-lg text-ink/70">
         Every guide on On Life Likes is written and reviewed by a real person on
         this team.
       </p>
@@ -33,24 +33,24 @@ export default function AuthorsPage() {
         {authors.map((a) => (
           <article
             key={a.slug}
-            className="flex flex-col gap-5 rounded-2xl border border-beige bg-white p-6 shadow-card sm:flex-row"
+            className="flex flex-col gap-5 rounded-2xl border border-line bg-white p-6 shadow-card sm:flex-row"
           >
-            <span className="relative block h-20 w-20 shrink-0 overflow-hidden rounded-full bg-sage-light">
+            <span className="relative block h-20 w-20 shrink-0 overflow-hidden rounded-full bg-second-tint">
               {a.image && (
                 <Image src={a.image} alt={a.name} fill sizes="80px" className="object-cover" />
               )}
             </span>
             <div>
-              <h2 className="text-xl font-bold text-pine">
-                <Link href={`/authors/${a.slug}`} className="hover:text-forest">
+              <h2 className="text-xl font-bold text-ink">
+                <Link href={`/authors/${a.slug}`} className="hover:text-brand">
                   {a.name}
                 </Link>
               </h2>
-              <p className="text-sm font-medium text-forest">{a.role}</p>
-              <p className="mt-2 text-sm leading-relaxed text-pine/80">{a.bio}</p>
+              <p className="text-sm font-medium text-brand">{a.role}</p>
+              <p className="mt-2 text-sm leading-relaxed text-ink/80">{a.bio}</p>
               <Link
                 href={`/authors/${a.slug}`}
-                className="mt-3 inline-block text-sm font-semibold text-forest hover:underline"
+                className="mt-3 inline-block text-sm font-semibold text-brand hover:underline"
               >
                 View articles →
               </Link>

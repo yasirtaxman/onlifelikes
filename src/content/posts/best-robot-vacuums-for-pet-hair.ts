@@ -23,7 +23,7 @@ export const post: Post = {
   publishedAt: "2026-06-15",
   updatedAt: "2026-07-03",
   image: "/images/categories/pets-at-home.svg",
-  imageAlt: "Robot vacuum and pet illustration in sage and forest green tones",
+  imageAlt: "Robot vacuum and pet illustration in On Life Likes brand colors",
   hasAffiliateLinks: true,
   showAds: true,
   faqSchema: true,

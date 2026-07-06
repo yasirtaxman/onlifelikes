@@ -10,7 +10,7 @@ export function AmazonButton({
       href={href}
       target="_blank"
       rel="nofollow sponsored noopener"
-      className="inline-flex items-center gap-2 rounded-full bg-forest px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-forest-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest"
+      className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-ink-dark transition-colors hover:bg-accent-deep focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-deep"
     >
       {label}
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">

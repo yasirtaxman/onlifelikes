@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img">
-<rect width="1200" height="675" fill="#F6F8F6"/>
-<rect width="1200" height="675" fill="#DAD7CD" opacity="0.35"/>
-<rect x="200" y="360" width="800" height="160" rx="40" fill="#588157" opacity="0.6"/><rect x="240" y="290" width="220" height="110" rx="30" fill="#F6F8F6"/><circle cx="900" cy="190" r="70" fill="#DAD7CD"/><path d="M870 160 a55 55 0 1 0 70 70 a70 70 0 1 1 -70 -70" fill="#344E41" opacity="0.75"/>
+<rect width="1200" height="675" fill="#FFFFFF"/>
+<rect width="1200" height="675" fill="#D1D5DB" opacity="0.35"/>
+<rect x="200" y="360" width="800" height="160" rx="40" fill="#0C5E69" opacity="0.6"/><rect x="240" y="290" width="220" height="110" rx="30" fill="#FFFFFF"/><circle cx="900" cy="190" r="70" fill="#D1D5DB"/><path d="M870 160 a55 55 0 1 0 70 70 a70 70 0 1 1 -70 -70" fill="#0C5E69" opacity="0.75"/>
 </svg>

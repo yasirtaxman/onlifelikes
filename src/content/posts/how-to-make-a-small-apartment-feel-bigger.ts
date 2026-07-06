@@ -23,7 +23,7 @@ export const post: Post = {
   publishedAt: "2026-06-04",
   updatedAt: "2026-06-25",
   image: "/images/categories/small-spaces.svg",
-  imageAlt: "Bright small apartment interior illustration in sage tones",
+  imageAlt: "Bright small apartment interior illustration in brand colors",
   hasAffiliateLinks: false,
   showAds: true,
   faqSchema: true,

@@ -23,7 +23,7 @@ export const post: Post = {
   publishedAt: "2026-06-12",
   updatedAt: "2026-06-29",
   image: "/images/categories/home-office.svg",
-  imageAlt: "Home office desk lamp illustration in sage and forest green tones",
+  imageAlt: "Home office desk lamp illustration in On Life Likes brand colors",
   hasAffiliateLinks: true,
   showAds: true,
   faqSchema: true,

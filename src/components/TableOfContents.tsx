@@ -11,9 +11,9 @@ export function TableOfContents({ body }: { body: Block[] }) {
   return (
     <nav
       aria-label="Table of contents"
-      className="my-6 rounded-2xl border border-beige bg-beige-light/60 p-6"
+      className="my-6 rounded-2xl border border-line bg-mist/60 p-6"
     >
-      <p className="text-sm font-bold uppercase tracking-wide text-forest-dark">
+      <p className="text-sm font-bold uppercase tracking-wide text-brand-dark">
         In this article
       </p>
       <ol className="mt-3 space-y-2 text-[15px]">
@@ -21,7 +21,7 @@ export function TableOfContents({ body }: { body: Block[] }) {
           <li key={h.text}>
             <a
               href={`#${slugify(h.text)}`}
-              className="text-pine/80 transition-colors hover:text-forest hover:underline"
+              className="text-ink/80 transition-colors hover:text-brand hover:underline"
             >
               {h.text}
             </a>

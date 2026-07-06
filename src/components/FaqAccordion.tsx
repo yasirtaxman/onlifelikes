@@ -12,14 +12,14 @@ export function FaqAccordion({
   if (!faqs.length) return null;
   return (
     <section className="my-10" aria-label={title}>
-      <h2 className="text-2xl font-bold text-pine">{title}</h2>
+      <h2 className="text-2xl font-bold text-ink">{title}</h2>
       <div className="mt-5 space-y-3">
         {faqs.map((faq, i) => (
           <details
             key={i}
-            className="group rounded-xl border border-beige bg-white shadow-card open:border-sage"
+            className="group rounded-xl border border-line bg-white shadow-card open:border-second"
           >
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold text-pine transition-colors hover:text-forest [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold text-ink transition-colors hover:text-brand [&::-webkit-details-marker]:hidden">
               {faq.question}
               <svg
                 width="18"
@@ -27,12 +27,12 @@ export function FaqAccordion({
                 viewBox="0 0 24 24"
                 fill="none"
                 aria-hidden="true"
-                className="shrink-0 text-forest transition-transform group-open:rotate-180"
+                className="shrink-0 text-brand transition-transform group-open:rotate-180"
               >
                 <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </summary>
-            <div className="border-t border-beige-light px-5 py-4 text-[15px] leading-relaxed text-pine/85">
+            <div className="border-t border-mist px-5 py-4 text-[15px] leading-relaxed text-ink/85">
               <InlineText text={faq.answer} />
             </div>
           </details>

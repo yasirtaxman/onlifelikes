@@ -9,7 +9,7 @@ export const categories: Category[] = [
     seoText:
       "Home & Living at On Life Likes covers the everyday side of running a home: organization systems that actually stick, furniture and decor choices that work in real houses and apartments, and small upgrades with outsized impact. Our guides are research-based — we compare features, materials, sizing, and real buyer needs so you can make a confident choice without spending a weekend reading spec sheets.",
     image: "/images/categories/home-living.svg",
-    imageAlt: "Illustration of a cozy living room in sage and forest green tones",
+    imageAlt: "Illustration of a cozy living room in On Life Likes brand colors",
     relatedCategorySlugs: ["small-spaces", "bedroom-sleep", "cleaning"],
     faqs: [
       {
@@ -32,7 +32,7 @@ export const categories: Category[] = [
     seoText:
       "The Cleaning section of On Life Likes helps you build a low-effort cleaning system: which vacuum type actually suits your floor plan, which tools earn their storage space, and which routines keep mess from piling up. Our vacuum and cleaning-tool guides are research-based comparisons built on specifications, capacity, run time, and buyer needs — and we update them as products change.",
     image: "/images/categories/cleaning.svg",
-    imageAlt: "Illustration of cleaning tools in sage and forest green tones",
+    imageAlt: "Illustration of cleaning tools in On Life Likes brand colors",
     relatedCategorySlugs: ["home-living", "small-spaces", "pets-at-home"],
     faqs: [
       {
@@ -55,7 +55,7 @@ export const categories: Category[] = [
     seoText:
       "On Life Likes Kitchen focuses on tools that earn their counter space. We compare compact coffee makers, air fryers, gadgets under $50, and organizers by size, capacity, cleanup effort, and value — because a small kitchen punishes bad purchases fast. Guides are research-based, built from product specifications and real buyer needs, and updated for availability.",
     image: "/images/categories/kitchen.svg",
-    imageAlt: "Illustration of kitchen tools in sage and forest green tones",
+    imageAlt: "Illustration of kitchen tools in On Life Likes brand colors",
     relatedCategorySlugs: ["small-spaces", "home-living", "best-under-budget"],
     faqs: [
       {
@@ -73,7 +73,7 @@ export const categories: Category[] = [
     seoText:
       "Smart Home at On Life Likes is written for normal households, not tech enthusiasts with server racks. We explain what smart plugs, bulbs, and displays actually do day to day, which ecosystems play nicely together, and how renters can automate without rewiring anything. Recommendations are research-based, built on compatibility, setup simplicity, and everyday usefulness.",
     image: "/images/categories/smart-home.svg",
-    imageAlt: "Illustration of smart home devices in sage and forest green tones",
+    imageAlt: "Illustration of smart home devices in On Life Likes brand colors",
     relatedCategorySlugs: ["home-office", "home-living", "small-spaces"],
     faqs: [
       {
@@ -96,7 +96,7 @@ export const categories: Category[] = [
     seoText:
       "Small Spaces is one of our core specialties. We research foldable furniture, vertical storage, entryway organizers, and layout tricks that make studio apartments and compact rooms live larger. Every product pick is filtered for footprint, dual function, and renter-friendliness, and every how-to is written for real apartments — not showroom staging.",
     image: "/images/categories/small-spaces.svg",
-    imageAlt: "Illustration of a compact apartment layout in sage and forest green tones",
+    imageAlt: "Illustration of a compact apartment layout in On Life Likes brand colors",
     relatedCategorySlugs: ["home-living", "kitchen", "home-office"],
     faqs: [
       {
@@ -119,7 +119,7 @@ export const categories: Category[] = [
     seoText:
       "The Home Office section helps remote and hybrid workers build a setup that doesn't wreck their back or their budget. We compare desk lamps, compact office chairs, standing desk converters, and full setups under set budgets, using ergonomics guidance, product specifications, and space constraints as our filters. Research-based, honest, and updated as products change.",
     image: "/images/categories/home-office.svg",
-    imageAlt: "Illustration of a home office desk in sage and forest green tones",
+    imageAlt: "Illustration of a home office desk in On Life Likes brand colors",
     relatedCategorySlugs: ["small-spaces", "smart-home", "best-under-budget"],
     faqs: [
       {
@@ -137,7 +137,7 @@ export const categories: Category[] = [
     seoText:
       "Pets at Home covers the intersection of pet life and home life: cameras that let you check in from work, vacuums that actually handle shedding, cat trees that fit apartments, and beds sized for real dogs. We compare products on capacity, durability, noise, and pet-specific features, and we say plainly when a pick is research-based rather than tested.",
     image: "/images/categories/pets-at-home.svg",
-    imageAlt: "Illustration of pets at home in sage and forest green tones",
+    imageAlt: "Illustration of pets at home in On Life Likes brand colors",
     relatedCategorySlugs: ["cleaning", "home-living", "small-spaces"],
     faqs: [
       {
@@ -155,7 +155,7 @@ export const categories: Category[] = [
     seoText:
       "Bedroom & Sleep focuses on the room where comfort matters most. We cover storage for small bedrooms, lighting that supports winding down, bedding fundamentals, and simple layout changes that make a bedroom feel calmer. Product recommendations are research-based, comparing materials, sizing, and value.",
     image: "/images/categories/bedroom-sleep.svg",
-    imageAlt: "Illustration of a calm bedroom in sage and forest green tones",
+    imageAlt: "Illustration of a calm bedroom in On Life Likes brand colors",
     relatedCategorySlugs: ["small-spaces", "home-living", "smart-home"],
   },
   {
@@ -166,7 +166,7 @@ export const categories: Category[] = [
     seoText:
       "Outdoor & Garden helps you get more from balconies, patios, and small yards. We focus on compact outdoor furniture, container gardening, low-maintenance plants, and seasonal prep — with the same research-based, budget-aware approach we use indoors.",
     image: "/images/categories/outdoor-garden.svg",
-    imageAlt: "Illustration of a balcony garden in sage and forest green tones",
+    imageAlt: "Illustration of a balcony garden in On Life Likes brand colors",
     relatedCategorySlugs: ["small-spaces", "home-living", "cleaning"],
   },
   {
@@ -177,7 +177,7 @@ export const categories: Category[] = [
     seoText:
       "Our Buying Guides collect the best products for a specific need — vacuums for apartments, lamps for home offices, gadgets under $50 — and explain who each pick suits and why. Every guide states its review method, discloses affiliate links, lists how we chose, and gets updated for availability. We never accept payment for a positive recommendation.",
     image: "/images/categories/buying-guides.svg",
-    imageAlt: "Illustration of product comparison cards in sage and forest green tones",
+    imageAlt: "Illustration of product comparison cards in On Life Likes brand colors",
     relatedCategorySlugs: ["comparisons", "best-under-budget"],
     faqs: [
       {
@@ -200,7 +200,7 @@ export const categories: Category[] = [
     seoText:
       "Best Under Budget rounds up genuinely good products under a fixed price: kitchen gadgets under $50, cleaning tools under $50, office setups under $300. We filter by build quality, usefulness, and long-term value — cheap junk that fails in a month is not a deal, and we treat it that way.",
     image: "/images/categories/best-under-budget.svg",
-    imageAlt: "Illustration of budget-friendly product picks in sage and forest green tones",
+    imageAlt: "Illustration of budget-friendly product picks in On Life Likes brand colors",
     relatedCategorySlugs: ["buying-guides", "comparisons"],
   },
   {
@@ -211,7 +211,7 @@ export const categories: Category[] = [
     seoText:
       "Product Comparisons put two options side by side — robot vacuum vs cordless, Alexa vs Google Home — and give you a straight answer: who should choose each one. We build these from specifications, ecosystem compatibility, and real-use trade-offs, with a quick verdict up top for readers in a hurry.",
     image: "/images/categories/comparisons.svg",
-    imageAlt: "Illustration of two products compared side by side in sage and forest tones",
+    imageAlt: "Illustration of two products compared side by side in On Life Likes brand colors",
     relatedCategorySlugs: ["buying-guides", "best-under-budget"],
   },
 ];

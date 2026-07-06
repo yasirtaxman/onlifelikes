@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img">
-<rect width="200" height="200" fill="#588157"/>
-<circle cx="100" cy="78" r="34" fill="#F6F8F6" opacity="0.95"/>
-<path d="M40 178 q0 -62 60 -62 q60 0 60 62z" fill="#F6F8F6" opacity="0.95"/>
+<rect width="200" height="200" fill="#0C5E69"/>
+<circle cx="100" cy="78" r="34" fill="#FFFFFF" opacity="0.95"/>
+<path d="M40 178 q0 -62 60 -62 q60 0 60 62z" fill="#FFFFFF" opacity="0.95"/>
 <text x="100" y="196" font-family="Arial, sans-serif" font-size="0" fill="none">MC</text>
 </svg>

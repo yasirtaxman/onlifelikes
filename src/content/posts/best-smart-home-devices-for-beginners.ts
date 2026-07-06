@@ -23,7 +23,7 @@ export const post: Post = {
   publishedAt: "2026-06-05",
   updatedAt: "2026-06-30",
   image: "/images/categories/smart-home.svg",
-  imageAlt: "Beginner smart home devices illustration in sage and forest tones",
+  imageAlt: "Beginner smart home devices illustration in On Life Likes brand colors",
   hasAffiliateLinks: true,
   showAds: true,
   faqSchema: true,

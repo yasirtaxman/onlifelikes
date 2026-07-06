@@ -11,7 +11,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-beige bg-cream/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link
           href="/"
@@ -26,15 +26,15 @@ export function Header() {
             aria-hidden="true"
             className="shrink-0"
           >
-            <rect width="32" height="32" rx="9" fill="#344E41" />
+            <rect width="32" height="32" rx="9" fill="#0C5E69" />
             <path
               d="M16 24c-4.5-2.6-8-5.9-8-9.6C8 11 10 9 12.4 9c1.5 0 2.8.8 3.6 2 .8-1.2 2.1-2 3.6-2C22 9 24 11 24 14.4c0 3.7-3.5 7-8 9.6z"
-              fill="#A3B18A"
+              fill="#DFC6AA"
             />
-            <circle cx="16" cy="14.5" r="2.2" fill="#F6F8F6" />
+            <circle cx="16" cy="14.5" r="2.2" fill="#FFFFFF" />
           </svg>
-          <span className="text-lg font-bold tracking-tight text-pine">
-            On Life <span className="text-forest">Likes</span>
+          <span className="text-lg font-bold tracking-tight text-ink">
+            On Life <span className="text-brand">Likes</span>
           </span>
         </Link>
 
@@ -47,8 +47,8 @@ export function Header() {
                 href={item.href}
                 className={`rounded-full px-3 py-2 text-sm font-medium transition-colors ${
                   active
-                    ? "bg-sage-light text-forest-dark"
-                    : "text-pine hover:bg-sage-light hover:text-forest-dark"
+                    ? "bg-second-tint text-brand-dark"
+                    : "text-ink hover:bg-second-tint hover:text-brand-dark"
                 }`}
               >
                 {item.label}
@@ -63,7 +63,7 @@ export function Header() {
 
         <button
           type="button"
-          className="rounded-lg p-2 text-pine hover:bg-sage-light lg:hidden"
+          className="rounded-lg p-2 text-ink hover:bg-second-tint lg:hidden"
           aria-expanded={open}
           aria-label={open ? "Close menu" : "Open menu"}
           onClick={() => setOpen(!open)}
@@ -80,7 +80,7 @@ export function Header() {
 
       {open && (
         <nav
-          className="border-t border-beige bg-cream px-4 pb-6 pt-3 lg:hidden"
+          className="border-t border-line bg-white px-4 pb-6 pt-3 lg:hidden"
           aria-label="Mobile"
         >
           <div className="mb-3 md:hidden">
@@ -91,7 +91,7 @@ export function Header() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="block rounded-lg px-3 py-2.5 text-sm font-medium text-pine hover:bg-sage-light"
+                  className="block rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-second-tint"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}
@@ -101,7 +101,7 @@ export function Header() {
             <li>
               <Link
                 href="/categories"
-                className="block rounded-lg px-3 py-2.5 text-sm font-semibold text-forest hover:bg-sage-light"
+                className="block rounded-lg px-3 py-2.5 text-sm font-semibold text-brand hover:bg-second-tint"
                 onClick={() => setOpen(false)}
               >
                 All categories →

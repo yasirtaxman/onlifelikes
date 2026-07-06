@@ -23,7 +23,7 @@ export const post: Post = {
   publishedAt: "2026-06-02",
   updatedAt: "2026-06-28",
   image: "/images/categories/small-spaces.svg",
-  imageAlt: "Compact apartment layout with space-saving furniture, sage illustration",
+  imageAlt: "Compact apartment layout with space-saving furniture, brand-color illustration",
   hasAffiliateLinks: true,
   showAds: true,
   faqSchema: true,

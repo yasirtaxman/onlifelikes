@@ -3,11 +3,11 @@ import type { ReactNode } from "react";
 
 const variants = {
   primary:
-    "bg-forest text-white hover:bg-forest-dark focus-visible:outline-forest",
+    "bg-brand text-white hover:bg-brand-dark focus-visible:outline-brand",
   secondary:
-    "bg-sage-light text-pine hover:bg-sage/60 focus-visible:outline-sage",
+    "bg-second-tint text-ink hover:bg-second/60 focus-visible:outline-second",
   outline:
-    "border-2 border-forest text-forest hover:bg-forest hover:text-white focus-visible:outline-forest",
+    "border-2 border-brand text-brand hover:bg-brand hover:text-white focus-visible:outline-brand",
 } as const;
 
 export function CtaButton({

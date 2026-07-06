@@ -33,7 +33,7 @@ export function PostBody({
               <h2
                 key={i}
                 id={id}
-                className="mt-10 scroll-mt-24 text-2xl font-bold leading-snug text-pine"
+                className="mt-10 scroll-mt-24 text-2xl font-bold leading-snug text-ink"
               >
                 {block.text}
               </h2>
@@ -41,7 +41,7 @@ export function PostBody({
               <h3
                 key={i}
                 id={id}
-                className="mt-8 scroll-mt-24 text-xl font-bold leading-snug text-pine"
+                className="mt-8 scroll-mt-24 text-xl font-bold leading-snug text-ink"
               >
                 {block.text}
               </h3>
@@ -61,11 +61,11 @@ export function PostBody({
               </li>
             ));
             return block.ordered ? (
-              <ol key={i} className={`${cls} list-decimal marker:font-semibold marker:text-forest`}>
+              <ol key={i} className={`${cls} list-decimal marker:font-semibold marker:text-brand`}>
                 {items}
               </ol>
             ) : (
-              <ul key={i} className={`${cls} list-disc marker:text-sage`}>
+              <ul key={i} className={`${cls} list-disc marker:text-second`}>
                 {items}
               </ul>
             );
@@ -73,7 +73,7 @@ export function PostBody({
           case "image":
             return (
               <figure key={i} className="my-8">
-                <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-sage-light">
+                <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-second-tint">
                   <Image
                     src={block.src}
                     alt={block.alt}
@@ -83,7 +83,7 @@ export function PostBody({
                   />
                 </div>
                 {block.caption && (
-                  <figcaption className="mt-2 text-center text-sm text-pine/60">
+                  <figcaption className="mt-2 text-center text-sm text-ink/60">
                     {block.caption}
                   </figcaption>
                 )}

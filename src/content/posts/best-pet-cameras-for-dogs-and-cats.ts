@@ -23,7 +23,7 @@ export const post: Post = {
   publishedAt: "2026-06-24",
   updatedAt: "2026-07-04",
   image: "/images/categories/pets-at-home.svg",
-  imageAlt: "Pet camera watching a dog and cat, sage illustration",
+  imageAlt: "Pet camera watching a dog and cat, brand-color illustration",
   hasAffiliateLinks: true,
   showAds: true,
   faqSchema: true,

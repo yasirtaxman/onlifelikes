@@ -23,7 +23,7 @@ export const post: Post = {
   publishedAt: "2026-06-22",
   updatedAt: "2026-07-03",
   image: "/images/categories/kitchen.svg",
-  imageAlt: "Under-sink organizer illustration in sage and forest green tones",
+  imageAlt: "Under-sink organizer illustration in On Life Likes brand colors",
   hasAffiliateLinks: true,
   showAds: true,
   faqSchema: true,

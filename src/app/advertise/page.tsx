@@ -32,7 +32,7 @@ export default function AdvertisePage() {
         </li>
         <li>Newsletter sponsorship (as our list grows).</li>
       </ul>
-      <h2>What we don't offer</h2>
+      <h2>What we don&apos;t offer</h2>
       <p>
         We do not sell positive reviews, guaranteed placements in buying
         guides, undisclosed sponsored posts, or links disguised as editorial
